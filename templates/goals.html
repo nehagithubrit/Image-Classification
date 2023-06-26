@@ -1,0 +1,116 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> RedRot Detection Website </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <style>
+   nav .navbar .menu li{
+  list-style: none;
+  margin: 0 8px;
+}
+.navbar .menu a{
+  font-size: 18px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 6px 0;
+ 
+}
+.navbar .menu a:hover{
+  color: #4070f4;
+}
+.navbar .media-icons a{  
+  color: #4070f4;
+  font-size: 18px;
+  margin: 0 6px;
+
+.button{
+width:10%;
+  height:30px;
+}
+
+.home .button button:hover{
+  border-color: #4070f4;
+  background-color: #fff;
+  color: #4070f4;
+  
+}
+footer .text span a:hover{
+  text-decoration: underline;
+}
+  <!-- navgaition menu -->
+
+  body  {
+    background-image: {{url_for('static',filename =C:/Users/nehashetty/Desktop/hackathon files/Sugarcane.jpg )}};;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  * {
+              margin: 0px;
+              padding: 0px;
+              box-sizing: border-box;
+  
+  
+          }
+  
+        </style>
+
+<body background="{{url_for('static',filename =C:/Users/nehashetty/Desktop/hackathon files/Sugarcane.jpg '')}}">
+  
+  <nav style="position: fixed;width: 100%;padding: 20px 0;">
+    <div class="navbar" style="width: 90%;display: flex;justify-content:space-between;align-items: center;margin: auto;">
+      <div class="logo" style="font-weight: 500;font-size: 35px;color: #4070f4;"><a href="#">Crops Detection</a></div>
+      <ul class="menu" style="display: flex;position: relative;">
+          <li><a href="home.html">Home</a></li>
+
+          <li><a href="goals.html">Goals</a></li>
+          
+      </ul>
+      <div class="media-icons">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    
+  </nav>
+
+<!-- Home Section Start -->
+ <section class="home" id="home" style="height: 100vh;
+  width: 100%;background: url('static/background.jpeg') no-repeat;background-size: cover;background-position: center;background-attachment: fixed;font-family: 'Ubuntu', sans-serif;">
+   <div class="home-content" style="width: 90%;height: 100%; margin: auto;display: flex;flex-direction: column;justify-content: center;">
+     <div class="text">
+      
+       <div class="text-one" style="font-size: 25px;color: #0E2431;"></div>
+
+       <div class="text-two" style=" color: #0E2431;font-size: 75px;font-weight: 600;margin-left: -3px;">Aim</div>
+       <div class="text-three" style="font-size: 40px;margin: 5px 0;color: #4070f4;">
+Sugarcane crops hold immense significance in India, being a crucial crop cultivated by numerous farmers for profitable returns. Protecting these crops from diseases like red rot and red rust is of paramount importance in order to enhance crop yield. To achieve this, we employ image classification techniques to distinguish between healthy and unhealthy batches of sugarcane, enabling us to swiftly identify and remove diseased plants from the fields before they inflict further harm upon the rest of the crop. By promptly detecting and eliminating the affected plants, we can safeguard the overall health and productivity of the sugarcane crop, ensuring optimal yields for the farmers.
+</div>
+     </div>
+     </div>
+   </div>
+ </section>
+
+
+<!-- Footer Section Start -->
+<footer style="background: #4070f4;padding: 15px 0;text-align: center;font-family: 'Poppins', sans-serif;">
+  <div class="text">
+    <span style="font-size: 17px;font-weight: 400;color: #fff;">Created By <a href="#" style="font-weight: 500;color: #FFF;">Elite Hackers</a> | &#169; 2021 All Rights Reserved</span>
+  </div>
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	

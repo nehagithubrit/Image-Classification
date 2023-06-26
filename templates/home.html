@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugarcane Disease Detection System</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f2f2f2;
+      background-image: url('https://thumbs.dreamstime.com/b/leaves-sugarcane-vector-icon-cartoon-isolated-white-background-logo-164152358.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    
+    .header {
+      background-color: #4070f4;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 24px;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .heading {
+      font-size: 48px;
+      color: #4070f4;
+      font-family: 'Urbanist', sans-serif;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .subtext {
+      font-size: 20px;
+      color: #000000;
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .github-logo {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      background-image: url('https://github.githubassets.com/favicon.ico');
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <h1>Elite Hackers</h1>
+  </div>
+  <div class="container">
+    <h class="heading">Sugarcane Disease Detection System</h>
+    <p class="subtext">Upload your image to classify now.</p>
+    
+    <form method='POST' enctype='multipart/form-data'>
+      {{form.hidden_tag()}}
+      {{form.file()}}
+      {{form.submit()}}
+    </form>
+    <a href="https://github.com/KARTIKDHYANI/Sugercane_disease_detection" class="github-logo"></a>
+  </div>
+</body>
+</html>

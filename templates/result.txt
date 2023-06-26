@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sugarcane Disease Detection System</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('https://thumbs.dreamstime.com/b/leaves-sugarcane-vector-icon-cartoon-isolated-white-background-logo-164152358.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .github-logo {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 30px;
+      height: 30px;
+      background-image: url('https://github.githubassets.com/favicon.ico');
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
+    }
+    .header {
+      background-color: #4070f4;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .header h1 {
+      font-size: 24px;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .heading {
+      font-size: 48px;
+      color: #4070f4;
+      font-family: 'Urbanist', sans-serif;
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .image-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .image-container img {
+      height: 200px;
+      width: 200px;
+      border: 1px solid #4070f4;
+    }
+    
+    .text-three {
+      font-size: 40px;
+      margin: 0;
+      color: #4070f4;
+      text-align: center;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <h1>Elite Hackers</h1>
+  </div>
+  <div class="container">
+    <div class="image-container">
+      <img src="{{ image_path }}" alt="Image" width="100" height="100">
+    </div>
+
+    <div class="text-three">{{ label }}</div>
+    <button onclick="showAccuracy()">Show Accuracy</button>
+    <script>
+      function showAccuracy() {
+        alert("The model's accuracy for the result is {{ label1 }}%");
+      }
+    </script>
+    <a href="https://github.com/KARTIKDHYANI/Sugercane_disease_detection" class="github-logo"></a>
+  </div>
+</body>
+</html>
